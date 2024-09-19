@@ -71,12 +71,26 @@ int vm::jsr(const memory_type& instr){
 
 int vm::ld(const memory_type& instr){
   memory_type dr = (instr >> 9) & 0x7;
-  reg_[dr] += mem_[reg_[reg::pc] + sign_ext(instr & 0xFF,9)];
+  reg_[dr] = mem_[reg_[reg::pc] + sign_ext(instr & 0xFF,9)];
   update_flags(dr);
   return 0;
 }
 
+int vm::ldi(const memory_type& instr){
+  memory_type dr = (instr >> 9) & 0x7;
+  reg_[dr] = mem_[mem_[reg_[reg::pc] + sign_ext(instr & 0xFF,9)]];
+  update_flags(dr);
+  return 0;
 
+}
+
+int vm::ldr(const memory_type& instr){
+  memory_type dr = (instr >> 9) & 0x7;
+  memory_type baser = (instr >> 6) & 0x7;
+  reg_[dr] = mem_[reg_[baser] + sign_ext(instr & 0x3F,6)];
+  update_flags(dr);
+  return 0;
+}
 
 
 //implement:
