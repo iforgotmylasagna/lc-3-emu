@@ -1,0 +1,1 @@
+/home/kami/playground/c++/lc3vm/bin/run

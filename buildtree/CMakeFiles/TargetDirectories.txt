@@ -1,0 +1,7 @@
+/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles/lc3vm.dir
+/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles/edit_cache.dir
+/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles/rebuild_cache.dir
+/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles/list_install_components.dir
+/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles/install.dir
+/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles/install/local.dir
+/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles/install/strip.dir
