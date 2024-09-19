@@ -29,7 +29,7 @@ public:
 
   vm(){};
   vm(constants::addr addr_p): addr_(addr_p){};
-  int load_os(const std::string& os_path);
+  //int load_os(const std::string& os_path);
   int load_program(const std::string& program_path);
   void print_memory();
   void print_registry();

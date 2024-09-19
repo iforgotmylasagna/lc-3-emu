@@ -1,8 +1,8 @@
 CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: \
- /home/kami/playground/c++/lc3vm/src/vm_op_functions.cpp \
+ /home/kami/playground/c++/lc-3-emu/src/vm_op_functions.cpp \
  /usr/include/stdc-predef.h \
- /home/kami/playground/c++/lc3vm/include/lc3vm/vm.hpp \
- /home/kami/playground/c++/lc3vm/include/lc3vm/constants.hpp \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/vm.hpp \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/constants.hpp \
  /usr/include/c++/13/cstddef \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -14,7 +14,7 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: \
  /usr/include/c++/13/x86_64-redhat-linux/bits/cpu_defines.h \
  /usr/include/c++/13/pstl/pstl_config.h \
  /usr/lib/gcc/x86_64-redhat-linux/13/include/stddef.h \
- /home/kami/playground/c++/lc3vm/include/lc3vm/generic_memory.hpp \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/generic_memory.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/c++/13/bits/functexcept.h \
@@ -118,7 +118,7 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: \
  /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc /usr/include/c++/13/limits \
- /home/kami/playground/c++/lc3vm/include/lc3vm/file_reader.hpp \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/file_reader.hpp \
  /usr/include/c++/13/fstream /usr/include/c++/13/istream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/ext/atomicity.h \

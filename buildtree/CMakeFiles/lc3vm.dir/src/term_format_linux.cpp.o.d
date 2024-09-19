@@ -1,7 +1,7 @@
 CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o: \
- /home/kami/playground/c++/lc3vm/src/term_format_linux.cpp \
+ /home/kami/playground/c++/lc-3-emu/src/term_format_linux.cpp \
  /usr/include/stdc-predef.h \
- /home/kami/playground/c++/lc3vm/include/lc3vm/term_format.hpp \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/term_format.hpp \
  /usr/include/termios.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
  /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \

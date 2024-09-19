@@ -1,7 +1,7 @@
 CMakeFiles/lc3vm.dir/src/file_reader.cpp.o: \
- /home/kami/playground/c++/lc3vm/src/file_reader.cpp \
+ /home/kami/playground/c++/lc-3-emu/src/file_reader.cpp \
  /usr/include/stdc-predef.h \
- /home/kami/playground/c++/lc3vm/include/lc3vm/file_reader.hpp \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/file_reader.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -144,5 +144,5 @@ CMakeFiles/lc3vm.dir/src/file_reader.cpp.o: \
  /usr/lib/gcc/x86_64-redhat-linux/13/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/c++/13/iostream \
- /home/kami/playground/c++/lc3vm/include/lc3vm/endian_utils.hpp \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/endian_utils.hpp \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h

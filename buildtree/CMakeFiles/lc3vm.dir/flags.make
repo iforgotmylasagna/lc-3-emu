@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kami/playground/c++/lc3vm/include -I/home/kami/playground/c++/lc3vm/$(PROJECT_SOURCE_DIR)/src
+CXX_INCLUDES = -I/home/kami/playground/c++/lc-3-emu/include -I/home/kami/playground/c++/lc-3-emu/$(PROJECT_SOURCE_DIR)/src
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++23 -Wall -Wextra -Werror
 

@@ -24,7 +24,22 @@ int vm::add(const memory_type& instr){ //memory_type is uint16_t
 
 
 
+int vm::AND(const memory_type& instr){
+  memory_type dr = (instr >> 9) & 0x7;
+  memory_type sr1 = (instr >> 6) & 0x7;
+  memory_type imm = (instr >> 5) & 0x1;
 
+  if(static_cast<bool>(imm)){
+    memory_type imm5 = sign_ext(instr & 0x15, 5);
+    reg_[dr] = reg_[sr1] & imm5;
+  }else {
+    memory_type sr2 = instr & 0x7;
+    reg_[dr] = reg_[sr1] & reg_[sr2];
+  }
+
+  return update_flags(dr); //add can only fail inside update_flags
+                           //so it will reuturn -3 if update flag fail return 0 if success
+}
 
 
 

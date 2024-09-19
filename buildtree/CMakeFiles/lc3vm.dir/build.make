@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kami/playground/c++/lc3vm
+CMAKE_SOURCE_DIR = /home/kami/playground/c++/lc-3-emu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kami/playground/c++/lc3vm/buildtree
+CMAKE_BINARY_DIR = /home/kami/playground/c++/lc-3-emu/buildtree
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lc3vm.dir/depend.make
@@ -70,102 +70,102 @@ include CMakeFiles/lc3vm.dir/progress.make
 include CMakeFiles/lc3vm.dir/flags.make
 
 CMakeFiles/lc3vm.dir/src/main.cpp.o: CMakeFiles/lc3vm.dir/flags.make
-CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc3vm/src/main.cpp
+CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main.cpp
 CMakeFiles/lc3vm.dir/src/main.cpp.o: CMakeFiles/lc3vm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lc3vm.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/main.cpp.o -MF CMakeFiles/lc3vm.dir/src/main.cpp.o.d -o CMakeFiles/lc3vm.dir/src/main.cpp.o -c /home/kami/playground/c++/lc3vm/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lc3vm.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/main.cpp.o -MF CMakeFiles/lc3vm.dir/src/main.cpp.o.d -o CMakeFiles/lc3vm.dir/src/main.cpp.o -c /home/kami/playground/c++/lc-3-emu/src/main.cpp
 
 CMakeFiles/lc3vm.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lc3vm.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc3vm/src/main.cpp > CMakeFiles/lc3vm.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc-3-emu/src/main.cpp > CMakeFiles/lc3vm.dir/src/main.cpp.i
 
 CMakeFiles/lc3vm.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lc3vm.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc3vm/src/main.cpp -o CMakeFiles/lc3vm.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc-3-emu/src/main.cpp -o CMakeFiles/lc3vm.dir/src/main.cpp.s
 
 CMakeFiles/lc3vm.dir/src/file_reader.cpp.o: CMakeFiles/lc3vm.dir/flags.make
-CMakeFiles/lc3vm.dir/src/file_reader.cpp.o: /home/kami/playground/c++/lc3vm/src/file_reader.cpp
+CMakeFiles/lc3vm.dir/src/file_reader.cpp.o: /home/kami/playground/c++/lc-3-emu/src/file_reader.cpp
 CMakeFiles/lc3vm.dir/src/file_reader.cpp.o: CMakeFiles/lc3vm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lc3vm.dir/src/file_reader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/file_reader.cpp.o -MF CMakeFiles/lc3vm.dir/src/file_reader.cpp.o.d -o CMakeFiles/lc3vm.dir/src/file_reader.cpp.o -c /home/kami/playground/c++/lc3vm/src/file_reader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lc3vm.dir/src/file_reader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/file_reader.cpp.o -MF CMakeFiles/lc3vm.dir/src/file_reader.cpp.o.d -o CMakeFiles/lc3vm.dir/src/file_reader.cpp.o -c /home/kami/playground/c++/lc-3-emu/src/file_reader.cpp
 
 CMakeFiles/lc3vm.dir/src/file_reader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lc3vm.dir/src/file_reader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc3vm/src/file_reader.cpp > CMakeFiles/lc3vm.dir/src/file_reader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc-3-emu/src/file_reader.cpp > CMakeFiles/lc3vm.dir/src/file_reader.cpp.i
 
 CMakeFiles/lc3vm.dir/src/file_reader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lc3vm.dir/src/file_reader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc3vm/src/file_reader.cpp -o CMakeFiles/lc3vm.dir/src/file_reader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc-3-emu/src/file_reader.cpp -o CMakeFiles/lc3vm.dir/src/file_reader.cpp.s
 
 CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o: CMakeFiles/lc3vm.dir/flags.make
-CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o: /home/kami/playground/c++/lc3vm/src/pixbuff.cpp
+CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o: /home/kami/playground/c++/lc-3-emu/src/pixbuff.cpp
 CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o: CMakeFiles/lc3vm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o -MF CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o.d -o CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o -c /home/kami/playground/c++/lc3vm/src/pixbuff.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o -MF CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o.d -o CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o -c /home/kami/playground/c++/lc-3-emu/src/pixbuff.cpp
 
 CMakeFiles/lc3vm.dir/src/pixbuff.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lc3vm.dir/src/pixbuff.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc3vm/src/pixbuff.cpp > CMakeFiles/lc3vm.dir/src/pixbuff.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc-3-emu/src/pixbuff.cpp > CMakeFiles/lc3vm.dir/src/pixbuff.cpp.i
 
 CMakeFiles/lc3vm.dir/src/pixbuff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lc3vm.dir/src/pixbuff.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc3vm/src/pixbuff.cpp -o CMakeFiles/lc3vm.dir/src/pixbuff.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc-3-emu/src/pixbuff.cpp -o CMakeFiles/lc3vm.dir/src/pixbuff.cpp.s
 
 CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o: CMakeFiles/lc3vm.dir/flags.make
-CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o: /home/kami/playground/c++/lc3vm/src/term_format_linux.cpp
+CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o: /home/kami/playground/c++/lc-3-emu/src/term_format_linux.cpp
 CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o: CMakeFiles/lc3vm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o -MF CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o.d -o CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o -c /home/kami/playground/c++/lc3vm/src/term_format_linux.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o -MF CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o.d -o CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o -c /home/kami/playground/c++/lc-3-emu/src/term_format_linux.cpp
 
 CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc3vm/src/term_format_linux.cpp > CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc-3-emu/src/term_format_linux.cpp > CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.i
 
 CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc3vm/src/term_format_linux.cpp -o CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc-3-emu/src/term_format_linux.cpp -o CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.s
 
 CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o: CMakeFiles/lc3vm.dir/flags.make
-CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o: /home/kami/playground/c++/lc3vm/src/term_format_win.cpp
+CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o: /home/kami/playground/c++/lc-3-emu/src/term_format_win.cpp
 CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o: CMakeFiles/lc3vm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o -MF CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o.d -o CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o -c /home/kami/playground/c++/lc3vm/src/term_format_win.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o -MF CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o.d -o CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o -c /home/kami/playground/c++/lc-3-emu/src/term_format_win.cpp
 
 CMakeFiles/lc3vm.dir/src/term_format_win.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lc3vm.dir/src/term_format_win.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc3vm/src/term_format_win.cpp > CMakeFiles/lc3vm.dir/src/term_format_win.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc-3-emu/src/term_format_win.cpp > CMakeFiles/lc3vm.dir/src/term_format_win.cpp.i
 
 CMakeFiles/lc3vm.dir/src/term_format_win.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lc3vm.dir/src/term_format_win.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc3vm/src/term_format_win.cpp -o CMakeFiles/lc3vm.dir/src/term_format_win.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc-3-emu/src/term_format_win.cpp -o CMakeFiles/lc3vm.dir/src/term_format_win.cpp.s
 
 CMakeFiles/lc3vm.dir/src/vm.cpp.o: CMakeFiles/lc3vm.dir/flags.make
-CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc3vm/src/vm.cpp
+CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
 CMakeFiles/lc3vm.dir/src/vm.cpp.o: CMakeFiles/lc3vm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lc3vm.dir/src/vm.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/vm.cpp.o -MF CMakeFiles/lc3vm.dir/src/vm.cpp.o.d -o CMakeFiles/lc3vm.dir/src/vm.cpp.o -c /home/kami/playground/c++/lc3vm/src/vm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lc3vm.dir/src/vm.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/vm.cpp.o -MF CMakeFiles/lc3vm.dir/src/vm.cpp.o.d -o CMakeFiles/lc3vm.dir/src/vm.cpp.o -c /home/kami/playground/c++/lc-3-emu/src/vm.cpp
 
 CMakeFiles/lc3vm.dir/src/vm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lc3vm.dir/src/vm.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc3vm/src/vm.cpp > CMakeFiles/lc3vm.dir/src/vm.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc-3-emu/src/vm.cpp > CMakeFiles/lc3vm.dir/src/vm.cpp.i
 
 CMakeFiles/lc3vm.dir/src/vm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lc3vm.dir/src/vm.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc3vm/src/vm.cpp -o CMakeFiles/lc3vm.dir/src/vm.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc-3-emu/src/vm.cpp -o CMakeFiles/lc3vm.dir/src/vm.cpp.s
 
 CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: CMakeFiles/lc3vm.dir/flags.make
-CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc3vm/src/vm_op_functions.cpp
+CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm_op_functions.cpp
 CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: CMakeFiles/lc3vm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o -MF CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o.d -o CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o -c /home/kami/playground/c++/lc3vm/src/vm_op_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o -MF CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o.d -o CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o -c /home/kami/playground/c++/lc-3-emu/src/vm_op_functions.cpp
 
 CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc3vm/src/vm_op_functions.cpp > CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kami/playground/c++/lc-3-emu/src/vm_op_functions.cpp > CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.i
 
 CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc3vm/src/vm_op_functions.cpp -o CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kami/playground/c++/lc-3-emu/src/vm_op_functions.cpp -o CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.s
 
 # Object files for target lc3vm
 lc3vm_OBJECTS = \
@@ -189,7 +189,7 @@ run: CMakeFiles/lc3vm.dir/src/vm.cpp.o
 run: CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
 run: CMakeFiles/lc3vm.dir/build.make
 run: CMakeFiles/lc3vm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kami/playground/c++/lc3vm/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable run"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lc3vm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -201,6 +201,6 @@ CMakeFiles/lc3vm.dir/clean:
 .PHONY : CMakeFiles/lc3vm.dir/clean
 
 CMakeFiles/lc3vm.dir/depend:
-	cd /home/kami/playground/c++/lc3vm/buildtree && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kami/playground/c++/lc3vm /home/kami/playground/c++/lc3vm /home/kami/playground/c++/lc3vm/buildtree /home/kami/playground/c++/lc3vm/buildtree /home/kami/playground/c++/lc3vm/buildtree/CMakeFiles/lc3vm.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kami/playground/c++/lc-3-emu/buildtree && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kami/playground/c++/lc-3-emu /home/kami/playground/c++/lc-3-emu /home/kami/playground/c++/lc-3-emu/buildtree /home/kami/playground/c++/lc-3-emu/buildtree /home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles/lc3vm.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/lc3vm.dir/depend
 

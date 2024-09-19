@@ -1,4 +1,4 @@
-# Install script for directory: /home/kami/playground/c++/lc3vm
+# Install script for directory: /home/kami/playground/c++/lc-3-emu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,25 +43,25 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/kami/playground/c++/lc3vm/bin/run" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/kami/playground/c++/lc3vm/bin/run")
+  if(EXISTS "$ENV{DESTDIR}/home/kami/playground/c++/lc-3-emu/bin/run" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/kami/playground/c++/lc-3-emu/bin/run")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/kami/playground/c++/lc3vm/bin/run"
+         FILE "$ENV{DESTDIR}/home/kami/playground/c++/lc-3-emu/bin/run"
          RPATH "")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/kami/playground/c++/lc3vm/bin/run")
+   "/home/kami/playground/c++/lc-3-emu/bin/run")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/kami/playground/c++/lc3vm/bin" TYPE EXECUTABLE FILES "/home/kami/playground/c++/lc3vm/buildtree/run")
-  if(EXISTS "$ENV{DESTDIR}/home/kami/playground/c++/lc3vm/bin/run" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/kami/playground/c++/lc3vm/bin/run")
+  file(INSTALL DESTINATION "/home/kami/playground/c++/lc-3-emu/bin" TYPE EXECUTABLE FILES "/home/kami/playground/c++/lc-3-emu/buildtree/run")
+  if(EXISTS "$ENV{DESTDIR}/home/kami/playground/c++/lc-3-emu/bin/run" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/kami/playground/c++/lc-3-emu/bin/run")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/kami/playground/c++/lc3vm/bin/run")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/kami/playground/c++/lc-3-emu/bin/run")
     endif()
   endif()
 endif()
@@ -74,5 +74,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kami/playground/c++/lc3vm/buildtree/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kami/playground/c++/lc-3-emu/buildtree/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
