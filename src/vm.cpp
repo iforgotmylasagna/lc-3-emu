@@ -29,6 +29,7 @@ int vm::deco_instr(const memory_type& instr){
       return jsr(instr);
       break;
     case(op::ld):
+      return ld(instr);
       break;
     case(op::ldi):
       break;

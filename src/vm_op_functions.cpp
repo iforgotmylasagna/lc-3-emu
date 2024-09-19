@@ -49,26 +49,36 @@ int vm::br(const memory_type& instr){
   if(nzp & reg_[reg::cond]){
     reg_[reg::pc] =  reg_[reg::pc] + sign_ext(pcoffset9,8);
   }
-  return 1;
+  return 0;
 }
 
 int vm::jmp(const memory_type& instr){
   memory_type reg_loc = (instr >> 6) & 0x7;
   reg_[reg::pc] = reg_[reg_loc];
-  return 1;
+  return 0;
 }
 
 
 int vm::jsr(const memory_type& instr){
   reg_[reg::r7] = reg_[reg::pc];
   if((instr>>11)&0x1){
-    reg_[reg::pc] = sign_ext(instr & 0x3FF,10);
+    reg_[reg::pc] += sign_ext(instr & 0x7FF,11);
   }else{reg_[reg::pc] = reg_[(instr >> 6) & 0x7];
   }
-
-  return 1;
-
+  return 0;
 }
+
+
+int vm::ld(const memory_type& instr){
+  memory_type dr = (instr >> 9) & 0x7;
+  reg_[dr] += mem_[reg_[reg::pc] + sign_ext(instr & 0xFF,9)];
+  update_flags(dr);
+  return 0;
+}
+
+
+
+
 //implement:
 /*
 
