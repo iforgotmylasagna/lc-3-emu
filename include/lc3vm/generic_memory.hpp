@@ -27,6 +27,7 @@ public:
   }
 
   memory_type& operator[](std::size_t index){
+    index = static_cast<memory_type>(index);// this is neccessary because unsigned + unsigned = int results operator[int]
     if (index>max_index()) [[unlikely]] {
       throw std::out_of_range("Index out of range");
     }
@@ -34,6 +35,7 @@ public:
   }
 
   const memory_type& operator[](std::size_t index) const{
+    index = static_cast<memory_type>(index);
     if (index>max_index()) [[unlikely]] {
         throw std::out_of_range("Index out of range");
     }

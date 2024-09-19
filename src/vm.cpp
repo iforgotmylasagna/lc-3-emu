@@ -59,6 +59,7 @@ int vm::deco_instr(const memory_type& instr){
       return deco_trap(instr);
       break;
     case(op::reserved):
+      return -1;
       break;
     default:
       return -1;
@@ -165,12 +166,13 @@ int vm::run(const mode::mode_type m){
     }
 
     while(running_){
-      memory_type instr =  mem_[reg_[reg::pc]++];//must copy to avoid changing memory
+      memory_type instr =  mem_[reg_[reg::pc]];//must copy to avoid changing memory
+      reg_[reg::pc]=reg_[reg::pc]+1;
 
       if(m==mode::debug){
         std::cout << "\n"<< "INSTR: " << std::bitset<16>{instr} << std::endl;
         print_registry();
-        std::this_thread::sleep_for(std::chrono::milliseconds(100)); //slows down the loop
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000)); //slows down the loop
       }
 
       int decoret = deco_instr(instr);

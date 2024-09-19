@@ -6,13 +6,13 @@ using namespace lc3vm;
 
 int main(){
 vm test{};
-int i=test.load_program("bin/rogue.obj");
+int i=test.load_program("bin/2048.obj");
 if(i==0){
   std::cout << "PROGRAM LOAD SUCCESS"<<std::endl;
  }
 //test.print_memory(0x3000,0x30FF);
 std::cout << "RUNNING..."<<std::endl;
-test.run(mode::debug);
+test.run(mode::normal);
 
 /*
 vm::memory a{};

@@ -73,7 +73,7 @@ private:
     if((x >> (count-1)) & 1){
       x |= ( 0xFFFF << count);
     }
-    return x;
+    return static_cast<memory_type>(x);
   }
 
   int update_flags(const memory_type& reg_loc);
