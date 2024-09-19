@@ -30,7 +30,7 @@ int vm::AND(const memory_type& instr){
   memory_type imm = (instr >> 5) & 0x1;
 
   if(static_cast<bool>(imm)){
-    memory_type imm5 = sign_ext(instr & 0x15, 5);
+    memory_type imm5 = sign_ext(instr & 0x1F, 5);
     reg_[dr] = reg_[sr1] & imm5;
   }else {
     memory_type sr2 = instr & 0x7;
@@ -44,7 +44,7 @@ int vm::AND(const memory_type& instr){
 
 
 int vm::br(const memory_type& instr){
-  memory_type pcoffset9 = instr & 0xFF;
+  memory_type pcoffset9 = instr & 0x1FF;
   memory_type nzp = (instr >> 9) & 0x7;
   if(nzp & reg_[reg::cond]){
     reg_[reg::pc] =  reg_[reg::pc] + sign_ext(pcoffset9,8);
@@ -71,16 +71,14 @@ int vm::jsr(const memory_type& instr){
 
 int vm::ld(const memory_type& instr){
   memory_type dr = (instr >> 9) & 0x7;
-  reg_[dr] = mem_[reg_[reg::pc] + sign_ext(instr & 0xFF,9)];
-  update_flags(dr);
-  return 0;
+  reg_[dr] = mem_[reg_[reg::pc] + sign_ext(instr & 0x1FF,9)];
+  return update_flags(dr);
 }
 
 int vm::ldi(const memory_type& instr){
   memory_type dr = (instr >> 9) & 0x7;
   reg_[dr] = mem_[mem_[reg_[reg::pc] + sign_ext(instr & 0xFF,9)]];
-  update_flags(dr);
-  return 0;
+  return update_flags(dr);
 
 }
 
@@ -88,26 +86,44 @@ int vm::ldr(const memory_type& instr){
   memory_type dr = (instr >> 9) & 0x7;
   memory_type baser = (instr >> 6) & 0x7;
   reg_[dr] = mem_[reg_[baser] + sign_ext(instr & 0x3F,6)];
-  update_flags(dr);
+  return update_flags(dr);
+}
+
+int vm::lea(const memory_type& instr){
+  memory_type dr = (instr >> 9) & 0x7;
+  reg_[dr] = reg_[reg::pc] + sign_ext(instr & 0x1FF,9);
+  return update_flags(dr);
+}
+
+int vm::NOT(const memory_type& instr){
+  memory_type dr = (instr >> 9) & 0x7;
+  memory_type sr = (instr >> 6) & 0x7;
+  reg_[dr] = ~reg_[sr];
+  return update_flags(dr);
+}
+/*
+int vm::rti(const memory_type& instr){
+  return 0;
+}
+*/
+int vm::st(const memory_type& instr){
+  memory_type sr = (instr >> 9) & 0x7;
+  memory_type pcoffset9 = sign_ext(instr & 0x1FF,9);
+  mem_[reg_[reg::pc]+ pcoffset9] = reg_[sr];
   return 0;
 }
 
+int vm::sti(const memory_type& instr){
+  memory_type sr = (instr >> 9) & 0x7;
+  memory_type pcoffset9 = sign_ext(instr & 0x1FF,9);
+  mem_[mem_[reg_[reg::pc]+ pcoffset9]] = reg_[sr];
+  return 0;
+}
 
-//implement:
-/*
+int vm::str(const memory_type& instr){
+  memory_type sr = (instr >> 9) & 0x7;
+  memory_type baser = (instr >> 6) & 0x7;
+  mem_[reg_[baser] + sign_ext(instr & 0x3F,6)] = reg_[sr];
+  return 0;
 
-  int AND(const memory_type& instr); //pierce write this function and the ones below it
-  int br(const memory_type& instr);
-  int jmp(const memory_type& instr);
-  int jsr(const memory_type& instr);
-  int ld(const memory_type& instr);
-  int ldi(const memory_type& instr);
-  int ldr(const memory_type& instr);
-  int lea(const memory_type& instr);
-  int NOT(const memory_type& instr);
-  int rti(const memory_type& instr);
-  int st(const memory_type& instr);
-  int sti(const memory_type& instr);
-  int str(const memory_type& instr); // all the way to here
-
-  */
+}

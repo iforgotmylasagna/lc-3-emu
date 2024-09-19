@@ -38,16 +38,22 @@ int vm::deco_instr(const memory_type& instr){
       return ldr(instr);
       break;
     case(op::lea):
+      return lea(instr);
       break;
     case(op::NOT):
+      return NOT(instr);
       break;
     case(op::rti):
+      return 0; //does nothing, trap implemented in c++
       break;
     case(op::st):
+      return st(instr);
       break;
     case(op::sti):
+      return sti(instr);
       break;
     case(op::str):
+      return str(instr);
       break;
     case(op::trap):
       return deco_trap(instr);
