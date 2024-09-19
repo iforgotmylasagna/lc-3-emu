@@ -43,7 +43,32 @@ int vm::AND(const memory_type& instr){
 
 
 
+int vm::br(const memory_type& instr){
+  memory_type pcoffset9 = instr & 0xFF;
+  memory_type nzp = (instr >> 9) & 0x7;
+  if(nzp & reg_[reg::cond]){
+    reg_[reg::pc] =  reg_[reg::pc] + sign_ext(pcoffset9,8);
+  }
+  return 1;
+}
 
+int vm::jmp(const memory_type& instr){
+  memory_type reg_loc = (instr >> 6) & 0x7;
+  reg_[reg::pc] = reg_[reg_loc];
+  return 1;
+}
+
+
+int vm::jsr(const memory_type& instr){
+  reg_[reg::r7] = reg_[reg::pc];
+  if((instr>>11)&0x1){
+    reg_[reg::pc] = sign_ext(instr & 0x3FF,10);
+  }else{reg_[reg::pc] = reg_[(instr >> 6) & 0x7];
+  }
+
+  return 1;
+
+}
 //implement:
 /*
 

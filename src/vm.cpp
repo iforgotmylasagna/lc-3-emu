@@ -17,12 +17,16 @@ int vm::deco_instr(const memory_type& instr){
       return add(instr);
       break;
     case(op::AND):
+      return AND(instr);
       break;
     case(op::br):
+      return br(instr);
       break;
     case(op::jmp): //or ret
+      return jmp(instr);
       break;
     case(op::jsr): //or jsrr
+      return jsr(instr);
       break;
     case(op::ld):
       break;
@@ -157,7 +161,7 @@ int vm::run(const mode::mode_type m){
       if(m==mode::debug){
         std::cout << "\n"<< "INSTR: " << std::bitset<16>{instr} << std::endl;
         print_registry();
-        std::this_thread::sleep_for(std::chrono::milliseconds(1000)); //slows down the loop
+        std::this_thread::sleep_for(std::chrono::milliseconds(100)); //slows down the loop
       }
 
       int decoret = deco_instr(instr);
