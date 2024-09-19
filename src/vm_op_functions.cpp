@@ -20,8 +20,8 @@ int vm::add(const memory_type& instr){ //memory_type is uint16_t
     memory_type sr1 = (instr >> 6) & 0x7;
     memory_type imm = (instr >> 5) & 0x1;
 
-    if(static_cast<bool>(imm)){
-      memory_type imm5 = sign_ext(instr & 0x15, 5);
+    if(imm){
+      memory_type imm5 = sign_ext(instr & 0x1F, 5);
       reg_[dr] = reg_[sr1] + imm5;
     }else {
       memory_type sr2 = instr & 0x7;

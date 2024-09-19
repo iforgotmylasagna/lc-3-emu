@@ -14,6 +14,7 @@ if(i==0){
 std::cout << "RUNNING..."<<std::endl;
 test.run(mode::normal);
 
+
 /*
 vm::memory a{};
 vm::registor b{};

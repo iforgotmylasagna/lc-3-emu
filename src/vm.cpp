@@ -166,8 +166,7 @@ int vm::run(const mode::mode_type m){
     }
 
     while(running_){
-      memory_type instr =  mem_[reg_[reg::pc]];//must copy to avoid changing memory
-      reg_[reg::pc]=reg_[reg::pc]+1;
+      memory_type instr =  mem_[reg_[reg::pc]++];//must copy to avoid changing memory
 
       if(m==mode::debug){
         std::cout << "\n"<< "INSTR: " << std::bitset<16>{instr} << std::endl;
@@ -176,7 +175,7 @@ int vm::run(const mode::mode_type m){
       }
 
       int decoret = deco_instr(instr);
-
+      std::cout << std::flush;
       if(decoret<0){//if failure return
         std::cout << "PROGRAM ERROR: " << decoret <<" RETURN" << std::endl;
         return -1;
@@ -195,7 +194,7 @@ vm::memory_type vm::swap(const memory_type& a){
 
 //trap functions not tested
 inline int vm::getc(){
-  reg_[reg::r0] = std::getchar();
+  reg_[reg::r0] = static_cast<memory_type>(std::getchar());
   update_flags(reg::r0);//correct?
   return 0;
 }
@@ -218,6 +217,7 @@ inline int vm::in(){
   char c = std::getchar();
   std::cout << c;
   reg_[reg::r0] = static_cast<memory_type>(c);
+  update_flags(reg::r0);//correct?
   return 0;
 }
 
@@ -230,6 +230,5 @@ inline int vm::putsp(){
     }
     std::putchar(static_cast<char>(mem_[mem_beg+i] >> 8));
   }
-  std::cout << std::flush;
   return 0;
 }
