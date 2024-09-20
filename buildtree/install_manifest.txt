@@ -1,0 +1,1 @@
+/home/kami/playground/c++/lc-3-emu/bin/run
