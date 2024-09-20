@@ -4,6 +4,6 @@ to build:
 
 install cmake
 
-sudo chmod +x compile.sh
+chmod +x compile.sh
 
 ./compile
