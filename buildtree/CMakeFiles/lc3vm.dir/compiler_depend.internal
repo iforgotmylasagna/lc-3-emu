@@ -221,12 +221,8 @@ CMakeFiles/lc3vm.dir/src/file_reader.cpp.o
 CMakeFiles/lc3vm.dir/src/main.cpp.o
  /home/kami/playground/c++/lc-3-emu/src/main.cpp
  /home/kami/playground/c++/lc-3-emu/include/lc3vm/constants.hpp
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/endian_utils.hpp
  /home/kami/playground/c++/lc-3-emu/include/lc3vm/file_reader.hpp
  /home/kami/playground/c++/lc-3-emu/include/lc3vm/generic_memory.hpp
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/lc3vm.hpp
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/pixbuff.hpp
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/term_format.hpp
  /home/kami/playground/c++/lc-3-emu/include/lc3vm/vm.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
@@ -240,6 +236,8 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o
  /usr/include/bits/endianness.h
  /usr/include/bits/environments.h
  /usr/include/bits/errno.h
+ /usr/include/bits/fcntl-linux.h
+ /usr/include/bits/fcntl.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
  /usr/include/bits/getopt_core.h
@@ -247,6 +245,11 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o
  /usr/include/bits/libc-header-start.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/mman-linux.h
+ /usr/include/bits/mman-map-flags-generic.h
+ /usr/include/bits/mman-shared.h
+ /usr/include/bits/mman.h
+ /usr/include/bits/mman_ext.h
  /usr/include/bits/posix_opt.h
  /usr/include/bits/pthread_stack_min-dynamic.h
  /usr/include/bits/pthreadtypes-arch.h
@@ -254,6 +257,20 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o
  /usr/include/bits/sched.h
  /usr/include/bits/select.h
  /usr/include/bits/setjmp.h
+ /usr/include/bits/sigaction.h
+ /usr/include/bits/sigcontext.h
+ /usr/include/bits/sigevent-consts.h
+ /usr/include/bits/siginfo-arch.h
+ /usr/include/bits/siginfo-consts-arch.h
+ /usr/include/bits/siginfo-consts.h
+ /usr/include/bits/signal_ext.h
+ /usr/include/bits/signum-arch.h
+ /usr/include/bits/signum-generic.h
+ /usr/include/bits/sigstack.h
+ /usr/include/bits/sigstksz.h
+ /usr/include/bits/sigthread.h
+ /usr/include/bits/ss_flags.h
+ /usr/include/bits/stat.h
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-uintn.h
  /usr/include/bits/stdio.h
@@ -262,6 +279,7 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
+ /usr/include/bits/struct_stat.h
  /usr/include/bits/termios-baud.h
  /usr/include/bits/termios-c_cc.h
  /usr/include/bits/termios-c_cflag.h
@@ -285,17 +303,25 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o
  /usr/include/bits/types/__locale_t.h
  /usr/include/bits/types/__mbstate_t.h
  /usr/include/bits/types/__sigset_t.h
+ /usr/include/bits/types/__sigval_t.h
  /usr/include/bits/types/clock_t.h
  /usr/include/bits/types/clockid_t.h
  /usr/include/bits/types/cookie_io_functions_t.h
  /usr/include/bits/types/error_t.h
  /usr/include/bits/types/locale_t.h
  /usr/include/bits/types/mbstate_t.h
+ /usr/include/bits/types/sig_atomic_t.h
+ /usr/include/bits/types/sigevent_t.h
+ /usr/include/bits/types/siginfo_t.h
  /usr/include/bits/types/sigset_t.h
+ /usr/include/bits/types/sigval_t.h
+ /usr/include/bits/types/stack_t.h
  /usr/include/bits/types/struct_FILE.h
  /usr/include/bits/types/struct___jmp_buf_tag.h
+ /usr/include/bits/types/struct_iovec.h
  /usr/include/bits/types/struct_itimerspec.h
  /usr/include/bits/types/struct_sched_param.h
+ /usr/include/bits/types/struct_sigstack.h
  /usr/include/bits/types/struct_timespec.h
  /usr/include/bits/types/struct_timeval.h
  /usr/include/bits/types/struct_tm.h
@@ -387,7 +413,6 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o
  /usr/include/c++/13/cstdint
  /usr/include/c++/13/cstdio
  /usr/include/c++/13/cstdlib
- /usr/include/c++/13/cstring
  /usr/include/c++/13/cwchar
  /usr/include/c++/13/cwctype
  /usr/include/c++/13/debug/assertions.h
@@ -410,6 +435,7 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o
  /usr/include/c++/13/ostream
  /usr/include/c++/13/pstl/pstl_config.h
  /usr/include/c++/13/stdexcept
+ /usr/include/c++/13/stdlib.h
  /usr/include/c++/13/streambuf
  /usr/include/c++/13/string
  /usr/include/c++/13/string_view
@@ -434,26 +460,31 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h
+ /usr/include/fcntl.h
  /usr/include/features-time64.h
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
+ /usr/include/linux/falloc.h
  /usr/include/locale.h
  /usr/include/pthread.h
  /usr/include/sched.h
+ /usr/include/signal.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
- /usr/include/string.h
- /usr/include/strings.h
  /usr/include/sys/cdefs.h
+ /usr/include/sys/mman.h
  /usr/include/sys/select.h
  /usr/include/sys/single_threaded.h
+ /usr/include/sys/termios.h
+ /usr/include/sys/time.h
  /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
+ /usr/include/sys/ucontext.h
  /usr/include/termios.h
  /usr/include/time.h
  /usr/include/unistd.h
@@ -734,6 +765,8 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o
  /usr/include/bits/endianness.h
  /usr/include/bits/environments.h
  /usr/include/bits/errno.h
+ /usr/include/bits/fcntl-linux.h
+ /usr/include/bits/fcntl.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
  /usr/include/bits/getopt_core.h
@@ -742,6 +775,11 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o
  /usr/include/bits/local_lim.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/mman-linux.h
+ /usr/include/bits/mman-map-flags-generic.h
+ /usr/include/bits/mman-shared.h
+ /usr/include/bits/mman.h
+ /usr/include/bits/mman_ext.h
  /usr/include/bits/posix1_lim.h
  /usr/include/bits/posix2_lim.h
  /usr/include/bits/posix_opt.h
@@ -752,6 +790,20 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o
  /usr/include/bits/select.h
  /usr/include/bits/semaphore.h
  /usr/include/bits/setjmp.h
+ /usr/include/bits/sigaction.h
+ /usr/include/bits/sigcontext.h
+ /usr/include/bits/sigevent-consts.h
+ /usr/include/bits/siginfo-arch.h
+ /usr/include/bits/siginfo-consts-arch.h
+ /usr/include/bits/siginfo-consts.h
+ /usr/include/bits/signal_ext.h
+ /usr/include/bits/signum-arch.h
+ /usr/include/bits/signum-generic.h
+ /usr/include/bits/sigstack.h
+ /usr/include/bits/sigstksz.h
+ /usr/include/bits/sigthread.h
+ /usr/include/bits/ss_flags.h
+ /usr/include/bits/stat.h
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-uintn.h
  /usr/include/bits/stdio.h
@@ -760,6 +812,7 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
+ /usr/include/bits/struct_stat.h
  /usr/include/bits/syscall.h
  /usr/include/bits/termios-baud.h
  /usr/include/bits/termios-c_cc.h
@@ -784,17 +837,25 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o
  /usr/include/bits/types/__locale_t.h
  /usr/include/bits/types/__mbstate_t.h
  /usr/include/bits/types/__sigset_t.h
+ /usr/include/bits/types/__sigval_t.h
  /usr/include/bits/types/clock_t.h
  /usr/include/bits/types/clockid_t.h
  /usr/include/bits/types/cookie_io_functions_t.h
  /usr/include/bits/types/error_t.h
  /usr/include/bits/types/locale_t.h
  /usr/include/bits/types/mbstate_t.h
+ /usr/include/bits/types/sig_atomic_t.h
+ /usr/include/bits/types/sigevent_t.h
+ /usr/include/bits/types/siginfo_t.h
  /usr/include/bits/types/sigset_t.h
+ /usr/include/bits/types/sigval_t.h
+ /usr/include/bits/types/stack_t.h
  /usr/include/bits/types/struct_FILE.h
  /usr/include/bits/types/struct___jmp_buf_tag.h
+ /usr/include/bits/types/struct_iovec.h
  /usr/include/bits/types/struct_itimerspec.h
  /usr/include/bits/types/struct_sched_param.h
+ /usr/include/bits/types/struct_sigstack.h
  /usr/include/bits/types/struct_timespec.h
  /usr/include/bits/types/struct_timeval.h
  /usr/include/bits/types/struct_tm.h
@@ -958,6 +1019,7 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o
  /usr/include/c++/13/span
  /usr/include/c++/13/sstream
  /usr/include/c++/13/stdexcept
+ /usr/include/c++/13/stdlib.h
  /usr/include/c++/13/stop_token
  /usr/include/c++/13/streambuf
  /usr/include/c++/13/string
@@ -987,6 +1049,7 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h
+ /usr/include/fcntl.h
  /usr/include/features-time64.h
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
@@ -995,22 +1058,27 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o
  /usr/include/limits.h
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
+ /usr/include/linux/falloc.h
  /usr/include/linux/limits.h
  /usr/include/locale.h
  /usr/include/pthread.h
  /usr/include/sched.h
  /usr/include/semaphore.h
+ /usr/include/signal.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
  /usr/include/sys/cdefs.h
+ /usr/include/sys/mman.h
  /usr/include/sys/select.h
  /usr/include/sys/single_threaded.h
  /usr/include/sys/syscall.h
+ /usr/include/sys/termios.h
  /usr/include/sys/time.h
  /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
+ /usr/include/sys/ucontext.h
  /usr/include/syscall.h
  /usr/include/termios.h
  /usr/include/time.h
@@ -1043,6 +1111,8 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
  /usr/include/bits/endianness.h
  /usr/include/bits/environments.h
  /usr/include/bits/errno.h
+ /usr/include/bits/fcntl-linux.h
+ /usr/include/bits/fcntl.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
  /usr/include/bits/getopt_core.h
@@ -1051,6 +1121,11 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
  /usr/include/bits/local_lim.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/mman-linux.h
+ /usr/include/bits/mman-map-flags-generic.h
+ /usr/include/bits/mman-shared.h
+ /usr/include/bits/mman.h
+ /usr/include/bits/mman_ext.h
  /usr/include/bits/posix1_lim.h
  /usr/include/bits/posix2_lim.h
  /usr/include/bits/posix_opt.h
@@ -1060,6 +1135,20 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
  /usr/include/bits/sched.h
  /usr/include/bits/select.h
  /usr/include/bits/setjmp.h
+ /usr/include/bits/sigaction.h
+ /usr/include/bits/sigcontext.h
+ /usr/include/bits/sigevent-consts.h
+ /usr/include/bits/siginfo-arch.h
+ /usr/include/bits/siginfo-consts-arch.h
+ /usr/include/bits/siginfo-consts.h
+ /usr/include/bits/signal_ext.h
+ /usr/include/bits/signum-arch.h
+ /usr/include/bits/signum-generic.h
+ /usr/include/bits/sigstack.h
+ /usr/include/bits/sigstksz.h
+ /usr/include/bits/sigthread.h
+ /usr/include/bits/ss_flags.h
+ /usr/include/bits/stat.h
  /usr/include/bits/stdint-intn.h
  /usr/include/bits/stdint-uintn.h
  /usr/include/bits/stdio.h
@@ -1068,7 +1157,18 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
  /usr/include/bits/stdlib-float.h
  /usr/include/bits/struct_mutex.h
  /usr/include/bits/struct_rwlock.h
+ /usr/include/bits/struct_stat.h
  /usr/include/bits/syscall.h
+ /usr/include/bits/termios-baud.h
+ /usr/include/bits/termios-c_cc.h
+ /usr/include/bits/termios-c_cflag.h
+ /usr/include/bits/termios-c_iflag.h
+ /usr/include/bits/termios-c_lflag.h
+ /usr/include/bits/termios-c_oflag.h
+ /usr/include/bits/termios-misc.h
+ /usr/include/bits/termios-struct.h
+ /usr/include/bits/termios-tcflow.h
+ /usr/include/bits/termios.h
  /usr/include/bits/thread-shared-types.h
  /usr/include/bits/time.h
  /usr/include/bits/time64.h
@@ -1082,17 +1182,25 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
  /usr/include/bits/types/__locale_t.h
  /usr/include/bits/types/__mbstate_t.h
  /usr/include/bits/types/__sigset_t.h
+ /usr/include/bits/types/__sigval_t.h
  /usr/include/bits/types/clock_t.h
  /usr/include/bits/types/clockid_t.h
  /usr/include/bits/types/cookie_io_functions_t.h
  /usr/include/bits/types/error_t.h
  /usr/include/bits/types/locale_t.h
  /usr/include/bits/types/mbstate_t.h
+ /usr/include/bits/types/sig_atomic_t.h
+ /usr/include/bits/types/sigevent_t.h
+ /usr/include/bits/types/siginfo_t.h
  /usr/include/bits/types/sigset_t.h
+ /usr/include/bits/types/sigval_t.h
+ /usr/include/bits/types/stack_t.h
  /usr/include/bits/types/struct_FILE.h
  /usr/include/bits/types/struct___jmp_buf_tag.h
+ /usr/include/bits/types/struct_iovec.h
  /usr/include/bits/types/struct_itimerspec.h
  /usr/include/bits/types/struct_sched_param.h
+ /usr/include/bits/types/struct_sigstack.h
  /usr/include/bits/types/struct_timespec.h
  /usr/include/bits/types/struct_timeval.h
  /usr/include/bits/types/struct_tm.h
@@ -1230,6 +1338,7 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
  /usr/include/c++/13/pstl/glue_memory_defs.h
  /usr/include/c++/13/pstl/pstl_config.h
  /usr/include/c++/13/stdexcept
+ /usr/include/c++/13/stdlib.h
  /usr/include/c++/13/streambuf
  /usr/include/c++/13/string
  /usr/include/c++/13/string_view
@@ -1255,6 +1364,7 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
  /usr/include/ctype.h
  /usr/include/endian.h
  /usr/include/errno.h
+ /usr/include/fcntl.h
  /usr/include/features-time64.h
  /usr/include/features.h
  /usr/include/gnu/stubs-64.h
@@ -1262,20 +1372,28 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o
  /usr/include/limits.h
  /usr/include/linux/close_range.h
  /usr/include/linux/errno.h
+ /usr/include/linux/falloc.h
  /usr/include/linux/limits.h
  /usr/include/locale.h
  /usr/include/pthread.h
  /usr/include/sched.h
+ /usr/include/signal.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
  /usr/include/sys/cdefs.h
+ /usr/include/sys/mman.h
  /usr/include/sys/select.h
  /usr/include/sys/single_threaded.h
  /usr/include/sys/syscall.h
+ /usr/include/sys/termios.h
+ /usr/include/sys/time.h
+ /usr/include/sys/ttydefaults.h
  /usr/include/sys/types.h
+ /usr/include/sys/ucontext.h
  /usr/include/syscall.h
+ /usr/include/termios.h
  /usr/include/time.h
  /usr/include/unistd.h
  /usr/include/wchar.h

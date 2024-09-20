@@ -5,6 +5,7 @@
 #include <memory> //for debug
 using namespace lc3vm;
 using namespace lc3vm::constants;
+
 template<typename T>
 std::string demangle(T s) {
   const char* name = typeid(s).name();

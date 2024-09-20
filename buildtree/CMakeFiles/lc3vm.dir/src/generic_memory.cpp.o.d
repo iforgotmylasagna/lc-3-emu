@@ -1,9 +1,8 @@
-CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: \
- /home/kami/playground/c++/lc-3-emu/src/vm_op_functions.cpp \
+CMakeFiles/lc3vm.dir/src/generic_memory.cpp.o: \
+ /home/kami/playground/c++/lc-3-emu/src/generic_memory.cpp \
  /usr/include/stdc-predef.h \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/vm.hpp \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/constants.hpp \
- /usr/include/c++/13/cstddef \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/generic_memory.hpp \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/os_defines.h \
@@ -13,9 +12,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: \
  /usr/include/gnu/stubs-64.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/cpu_defines.h \
  /usr/include/c++/13/pstl/pstl_config.h \
- /usr/lib/gcc/x86_64-redhat-linux/13/include/stddef.h \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/generic_memory.hpp \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/c++/13/bits/functexcept.h \
  /usr/include/c++/13/bits/exception_defines.h \
@@ -54,7 +50,8 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: \
  /usr/include/c++/13/backward/binders.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/vector.tcc \
- /usr/include/c++/13/bits/memory_resource.h \
+ /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
+ /usr/lib/gcc/x86_64-redhat-linux/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/ranges_util.h \
@@ -148,64 +145,4 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: \
  /usr/include/bits/mman.h /usr/include/bits/mman-map-flags-generic.h \
  /usr/include/bits/mman-linux.h /usr/include/bits/mman-shared.h \
  /usr/include/bits/mman_ext.h \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/file_reader.hpp \
- /usr/include/c++/13/fstream /usr/include/c++/13/istream \
- /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
- /usr/include/c++/13/ext/atomicity.h \
- /usr/include/c++/13/x86_64-redhat-linux/bits/gthr.h \
- /usr/include/c++/13/x86_64-redhat-linux/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
- /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
- /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
- /usr/include/bits/types/struct_tm.h \
- /usr/include/bits/types/struct_itimerspec.h /usr/include/bits/setjmp.h \
- /usr/include/bits/types/struct___jmp_buf_tag.h \
- /usr/include/bits/pthread_stack_min-dynamic.h \
- /usr/include/c++/13/x86_64-redhat-linux/bits/atomic_word.h \
- /usr/include/sys/single_threaded.h \
- /usr/include/c++/13/bits/locale_classes.h \
- /usr/include/c++/13/bits/locale_classes.tcc \
- /usr/include/c++/13/system_error \
- /usr/include/c++/13/x86_64-redhat-linux/bits/error_constants.h \
- /usr/include/c++/13/streambuf /usr/include/c++/13/bits/streambuf.tcc \
- /usr/include/c++/13/bits/basic_ios.h \
- /usr/include/c++/13/bits/locale_facets.h /usr/include/c++/13/cwctype \
- /usr/include/wctype.h /usr/include/bits/wctype-wchar.h \
- /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_base.h \
- /usr/include/c++/13/bits/streambuf_iterator.h \
- /usr/include/c++/13/x86_64-redhat-linux/bits/ctype_inline.h \
- /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
- /usr/include/c++/13/bits/ostream.tcc \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/bits/codecvt.h \
- /usr/include/c++/13/x86_64-redhat-linux/bits/basic_file.h \
- /usr/include/c++/13/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream \
- /usr/include/c++/13/bitset /usr/include/c++/13/cxxabi.h \
- /usr/include/c++/13/x86_64-redhat-linux/bits/cxxabi_tweaks.h \
- /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/bits/stl_raw_storage_iter.h \
- /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
- /usr/include/c++/13/bits/shared_ptr.h \
- /usr/include/c++/13/bits/shared_ptr_base.h \
- /usr/include/c++/13/bits/allocated_ptr.h \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/ext/concurrence.h \
- /usr/include/c++/13/bits/shared_ptr_atomic.h \
- /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/bits/atomic_wait.h /usr/include/c++/13/climits \
- /usr/lib/gcc/x86_64-redhat-linux/13/include/limits.h \
- /usr/lib/gcc/x86_64-redhat-linux/13/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/syscall.h \
- /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
- /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
- /usr/include/c++/13/bits/std_mutex.h \
- /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/bits/ranges_uninitialized.h \
- /usr/include/c++/13/bits/ranges_algobase.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/constants.hpp

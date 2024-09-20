@@ -219,12 +219,8 @@ CMakeFiles/lc3vm.dir/src/file_reader.cpp.o: /home/kami/playground/c++/lc-3-emu/s
 
 CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main.cpp \
   /home/kami/playground/c++/lc-3-emu/include/lc3vm/constants.hpp \
-  /home/kami/playground/c++/lc-3-emu/include/lc3vm/endian_utils.hpp \
   /home/kami/playground/c++/lc-3-emu/include/lc3vm/file_reader.hpp \
   /home/kami/playground/c++/lc-3-emu/include/lc3vm/generic_memory.hpp \
-  /home/kami/playground/c++/lc-3-emu/include/lc3vm/lc3vm.hpp \
-  /home/kami/playground/c++/lc-3-emu/include/lc3vm/pixbuff.hpp \
-  /home/kami/playground/c++/lc-3-emu/include/lc3vm/term_format.hpp \
   /home/kami/playground/c++/lc-3-emu/include/lc3vm/vm.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -238,6 +234,8 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main
   /usr/include/bits/endianness.h \
   /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
@@ -245,6 +243,11 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/mman-linux.h \
+  /usr/include/bits/mman-map-flags-generic.h \
+  /usr/include/bits/mman-shared.h \
+  /usr/include/bits/mman.h \
+  /usr/include/bits/mman_ext.h \
   /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
@@ -252,6 +255,20 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main
   /usr/include/bits/sched.h \
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
+  /usr/include/bits/sigaction.h \
+  /usr/include/bits/sigcontext.h \
+  /usr/include/bits/sigevent-consts.h \
+  /usr/include/bits/siginfo-arch.h \
+  /usr/include/bits/siginfo-consts-arch.h \
+  /usr/include/bits/siginfo-consts.h \
+  /usr/include/bits/signal_ext.h \
+  /usr/include/bits/signum-arch.h \
+  /usr/include/bits/signum-generic.h \
+  /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
+  /usr/include/bits/sigthread.h \
+  /usr/include/bits/ss_flags.h \
+  /usr/include/bits/stat.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio.h \
@@ -260,6 +277,7 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/struct_stat.h \
   /usr/include/bits/termios-baud.h \
   /usr/include/bits/termios-c_cc.h \
   /usr/include/bits/termios-c_cflag.h \
@@ -283,17 +301,25 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/error_t.h \
   /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sig_atomic_t.h \
+  /usr/include/bits/types/sigevent_t.h \
+  /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/sigval_t.h \
+  /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_iovec.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
   /usr/include/bits/types/struct_tm.h \
@@ -385,7 +411,6 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
-  /usr/include/c++/13/cstring \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -408,6 +433,7 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
@@ -432,26 +458,31 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: /home/kami/playground/c++/lc-3-emu/src/main
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
+  /usr/include/sys/mman.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
+  /usr/include/sys/termios.h \
+  /usr/include/sys/time.h \
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
+  /usr/include/sys/ucontext.h \
   /usr/include/termios.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
@@ -728,6 +759,8 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
   /usr/include/bits/endianness.h \
   /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
@@ -736,6 +769,11 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/mman-linux.h \
+  /usr/include/bits/mman-map-flags-generic.h \
+  /usr/include/bits/mman-shared.h \
+  /usr/include/bits/mman.h \
+  /usr/include/bits/mman_ext.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
   /usr/include/bits/posix_opt.h \
@@ -746,6 +784,20 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
   /usr/include/bits/select.h \
   /usr/include/bits/semaphore.h \
   /usr/include/bits/setjmp.h \
+  /usr/include/bits/sigaction.h \
+  /usr/include/bits/sigcontext.h \
+  /usr/include/bits/sigevent-consts.h \
+  /usr/include/bits/siginfo-arch.h \
+  /usr/include/bits/siginfo-consts-arch.h \
+  /usr/include/bits/siginfo-consts.h \
+  /usr/include/bits/signal_ext.h \
+  /usr/include/bits/signum-arch.h \
+  /usr/include/bits/signum-generic.h \
+  /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
+  /usr/include/bits/sigthread.h \
+  /usr/include/bits/ss_flags.h \
+  /usr/include/bits/stat.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio.h \
@@ -754,6 +806,7 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/struct_stat.h \
   /usr/include/bits/syscall.h \
   /usr/include/bits/termios-baud.h \
   /usr/include/bits/termios-c_cc.h \
@@ -778,17 +831,25 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/error_t.h \
   /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sig_atomic_t.h \
+  /usr/include/bits/types/sigevent_t.h \
+  /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/sigval_t.h \
+  /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_iovec.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
   /usr/include/bits/types/struct_tm.h \
@@ -952,6 +1013,7 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
   /usr/include/c++/13/span \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/stop_token \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -981,6 +1043,7 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
@@ -989,22 +1052,27 @@ CMakeFiles/lc3vm.dir/src/vm.cpp.o: /home/kami/playground/c++/lc-3-emu/src/vm.cpp
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/semaphore.h \
+  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/sys/cdefs.h \
+  /usr/include/sys/mman.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/syscall.h \
+  /usr/include/sys/termios.h \
   /usr/include/sys/time.h \
   /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
+  /usr/include/sys/ucontext.h \
   /usr/include/syscall.h \
   /usr/include/termios.h \
   /usr/include/time.h \
@@ -1036,6 +1104,8 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
   /usr/include/bits/endianness.h \
   /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
+  /usr/include/bits/fcntl-linux.h \
+  /usr/include/bits/fcntl.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/getopt_core.h \
@@ -1044,6 +1114,11 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/mman-linux.h \
+  /usr/include/bits/mman-map-flags-generic.h \
+  /usr/include/bits/mman-shared.h \
+  /usr/include/bits/mman.h \
+  /usr/include/bits/mman_ext.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
   /usr/include/bits/posix_opt.h \
@@ -1053,6 +1128,20 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
   /usr/include/bits/sched.h \
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
+  /usr/include/bits/sigaction.h \
+  /usr/include/bits/sigcontext.h \
+  /usr/include/bits/sigevent-consts.h \
+  /usr/include/bits/siginfo-arch.h \
+  /usr/include/bits/siginfo-consts-arch.h \
+  /usr/include/bits/siginfo-consts.h \
+  /usr/include/bits/signal_ext.h \
+  /usr/include/bits/signum-arch.h \
+  /usr/include/bits/signum-generic.h \
+  /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
+  /usr/include/bits/sigthread.h \
+  /usr/include/bits/ss_flags.h \
+  /usr/include/bits/stat.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-uintn.h \
   /usr/include/bits/stdio.h \
@@ -1061,7 +1150,18 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
   /usr/include/bits/stdlib-float.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/struct_stat.h \
   /usr/include/bits/syscall.h \
+  /usr/include/bits/termios-baud.h \
+  /usr/include/bits/termios-c_cc.h \
+  /usr/include/bits/termios-c_cflag.h \
+  /usr/include/bits/termios-c_iflag.h \
+  /usr/include/bits/termios-c_lflag.h \
+  /usr/include/bits/termios-c_oflag.h \
+  /usr/include/bits/termios-misc.h \
+  /usr/include/bits/termios-struct.h \
+  /usr/include/bits/termios-tcflow.h \
+  /usr/include/bits/termios.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/time.h \
   /usr/include/bits/time64.h \
@@ -1075,17 +1175,25 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/error_t.h \
   /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sig_atomic_t.h \
+  /usr/include/bits/types/sigevent_t.h \
+  /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/sigval_t.h \
+  /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_iovec.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
   /usr/include/bits/types/struct_tm.h \
@@ -1223,6 +1331,7 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
@@ -1248,6 +1357,7 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
@@ -1255,20 +1365,28 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/sys/cdefs.h \
+  /usr/include/sys/mman.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/syscall.h \
+  /usr/include/sys/termios.h \
+  /usr/include/sys/time.h \
+  /usr/include/sys/ttydefaults.h \
   /usr/include/sys/types.h \
+  /usr/include/sys/ucontext.h \
   /usr/include/syscall.h \
+  /usr/include/termios.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
@@ -1291,8 +1409,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/include/syscall.h:
-
-/usr/include/sys/time.h:
 
 /usr/include/semaphore.h:
 
@@ -1325,8 +1441,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/c++/13/bits/sstream.tcc:
 
 /usr/include/c++/13/bits/shared_ptr.h:
-
-/usr/include/c++/13/bits/semaphore_base.h:
 
 /usr/include/c++/13/bits/quoted_string.h:
 
@@ -1366,7 +1480,37 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /usr/include/c++/13/csignal:
 
+/usr/include/c++/13/bits/atomic_base.h:
+
+/home/kami/playground/c++/lc-3-emu/src/pixbuff.cpp:
+
+/usr/include/unistd.h:
+
+/usr/include/termios.h:
+
+/usr/include/c++/13/bits/std_mutex.h:
+
+/usr/include/sys/ttydefaults.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/termios.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/c++/13/stdlib.h:
+
+/usr/include/c++/13/limits:
+
+/usr/include/linux/falloc.h:
+
+/usr/include/bits/unistd_ext.h:
+
 /usr/include/bits/types/struct_sigstack.h:
+
+/usr/include/bits/types/struct_iovec.h:
 
 /home/kami/playground/c++/lc-3-emu/src/term_format_win.cpp:
 
@@ -1376,11 +1520,17 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /usr/include/bits/types/sigevent_t.h:
 
-/usr/include/bits/ss_flags.h:
-
 /usr/include/asm-generic/errno.h:
 
+/home/kami/playground/c++/lc-3-emu/include/lc3vm/term_format.hpp:
+
+/usr/include/c++/13/bits/stl_algobase.h:
+
 /usr/include/c++/13/x86_64-redhat-linux/bits/c++io.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/std_abs.h:
 
 /usr/include/c++/13/bits/postypes.h:
 
@@ -1403,8 +1553,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
 
 /usr/include/c++/13/iosfwd:
 
@@ -1442,10 +1590,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /usr/include/c++/13/bits/fstream.tcc:
 
-/usr/include/c++/13/bits/stl_algobase.h:
-
-/home/kami/playground/c++/lc-3-emu/include/lc3vm/term_format.hpp:
-
 /usr/include/c++/13/bits/exception_ptr.h:
 
 /usr/include/c++/13/bits/localefwd.h:
@@ -1480,6 +1624,8 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /usr/include/c++/13/bits/basic_ios.tcc:
 
+/usr/include/bits/mman_ext.h:
+
 /usr/include/c++/13/bits/concept_check.h:
 
 /home/kami/playground/c++/lc-3-emu/src/vm_op_functions.cpp:
@@ -1491,10 +1637,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/bits/select.h:
 
 /usr/include/c++/13/bits/stl_function.h:
-
-/usr/include/c++/13/bits/std_mutex.h:
-
-/usr/include/sys/ttydefaults.h:
 
 /usr/include/bits/sigevent-consts.h:
 
@@ -1515,10 +1657,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/c++/13/x86_64-redhat-linux/bits/atomic_word.h:
 
 /usr/include/sys/types.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/home/kami/playground/c++/lc-3-emu/src/pixbuff.cpp:
 
 /usr/lib/gcc/x86_64-redhat-linux/13/include/limits.h:
 
@@ -1634,15 +1772,23 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /home/kami/playground/c++/lc-3-emu/src/main.cpp:
 
+/usr/include/bits/mman.h:
+
 /usr/include/alloca.h:
 
 /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h:
+
+/usr/include/c++/13/bits/semaphore_base.h:
+
+/usr/include/bits/mman-linux.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
 /usr/include/bits/types/FILE.h:
+
+/usr/include/bits/mman-map-flags-generic.h:
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
@@ -1668,6 +1814,8 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /usr/include/bits/types/time_t.h:
 
+/usr/include/bits/struct_stat.h:
+
 /usr/include/c++/13/bits/stl_bvector.h:
 
 /usr/include/c++/13/bits/allocator.h:
@@ -1679,8 +1827,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/c++/13/numbers:
 
 /usr/include/bits/endian.h:
-
-/usr/include/linux/close_range.h:
 
 /usr/include/bits/types/error_t.h:
 
@@ -1706,6 +1852,8 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /usr/include/bits/types/locale_t.h:
 
+/usr/include/bits/ss_flags.h:
+
 /usr/include/c++/13/bits/new_allocator.h:
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
@@ -1725,8 +1873,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/bits/types/struct_timespec.h:
-
-/home/kami/playground/c++/lc-3-emu/include/lc3vm/pixbuff.hpp:
 
 /usr/include/bits/waitstatus.h:
 
@@ -1776,11 +1922,7 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /usr/include/c++/13/cwchar:
 
-/usr/include/c++/13/bits/this_thread_sleep.h:
-
-/usr/include/bits/types/__sigval_t.h:
-
-/usr/include/gnu/stubs-64.h:
+/usr/include/bits/fcntl.h:
 
 /usr/include/c++/13/ext/alloc_traits.h:
 
@@ -1831,6 +1973,18 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/c++/13/x86_64-redhat-linux/bits/basic_file.h:
 
 /usr/include/c++/13/x86_64-redhat-linux/bits/c++locale.h:
+
+/usr/include/c++/13/iomanip:
+
+/home/kami/playground/c++/lc-3-emu/src/term_format_linux.cpp:
+
+/usr/include/signal.h:
+
+/usr/include/strings.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/bits/fcntl-linux.h:
 
 /usr/include/c++/13/variant:
 
@@ -1900,12 +2054,6 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /home/kami/playground/c++/lc-3-emu/include/lc3vm/constants.hpp:
 
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/home/kami/playground/c++/lc-3-emu/include/lc3vm/lc3vm.hpp:
-
 /home/kami/playground/c++/lc-3-emu/include/lc3vm/vm.hpp:
 
 /usr/include/bits/confname.h:
@@ -1919,6 +2067,30 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 /usr/include/bits/siginfo-consts-arch.h:
 
 /usr/include/bits/sigstack.h:
+
+/usr/include/bits/mman-shared.h:
+
+/usr/include/bits/sigaction.h:
+
+/usr/include/c++/13/istream:
+
+/usr/include/bits/siginfo-arch.h:
+
+/usr/include/bits/siginfo-consts.h:
+
+/usr/include/c++/13/pstl/glue_memory_defs.h:
+
+/usr/include/sys/syscall.h:
+
+/usr/include/c++/13/exception:
+
+/usr/include/bits/signum-arch.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/bits/signum-generic.h:
+
+/usr/include/bits/stat.h:
 
 /usr/include/c++/13/bits/atomic_wait.h:
 
@@ -1942,42 +2114,14 @@ CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o: /home/kami/playground/c++/lc-3-e
 
 /usr/include/bits/termios-c_oflag.h:
 
+/usr/include/sys/mman.h:
+
 /usr/include/c++/13/bits/functexcept.h:
 
 /usr/include/bits/termios-misc.h:
 
-/usr/include/bits/unistd_ext.h:
+/usr/include/c++/13/bits/this_thread_sleep.h:
 
-/usr/include/c++/13/limits:
+/usr/include/gnu/stubs-64.h:
 
-/usr/include/termios.h:
-
-/usr/include/unistd.h:
-
-/usr/include/c++/13/iomanip:
-
-/usr/include/signal.h:
-
-/usr/include/strings.h:
-
-/home/kami/playground/c++/lc-3-emu/src/term_format_linux.cpp:
-
-/usr/include/bits/sigaction.h:
-
-/usr/include/c++/13/istream:
-
-/usr/include/bits/siginfo-arch.h:
-
-/usr/include/bits/siginfo-consts.h:
-
-/usr/include/c++/13/pstl/glue_memory_defs.h:
-
-/usr/include/sys/syscall.h:
-
-/usr/include/c++/13/exception:
-
-/usr/include/bits/signum-arch.h:
-
-/usr/include/c++/13/bits/basic_ios.h:
-
-/usr/include/bits/signum-generic.h:
+/usr/include/bits/types/__sigval_t.h:

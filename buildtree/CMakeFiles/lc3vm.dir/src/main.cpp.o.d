@@ -1,9 +1,9 @@
 CMakeFiles/lc3vm.dir/src/main.cpp.o: \
  /home/kami/playground/c++/lc-3-emu/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/lc3vm.hpp \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/generic_memory.hpp \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/vm.hpp \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/constants.hpp \
+ /usr/include/c++/13/cstddef \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/os_defines.h \
@@ -13,6 +13,9 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: \
  /usr/include/gnu/stubs-64.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/cpu_defines.h \
  /usr/include/c++/13/pstl/pstl_config.h \
+ /usr/lib/gcc/x86_64-redhat-linux/13/include/stddef.h \
+ /home/kami/playground/c++/lc-3-emu/include/lc3vm/generic_memory.hpp \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/c++/13/bits/functexcept.h \
  /usr/include/c++/13/bits/exception_defines.h \
@@ -51,8 +54,7 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: \
  /usr/include/c++/13/backward/binders.h \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/vector.tcc \
- /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
- /usr/lib/gcc/x86_64-redhat-linux/13/include/stddef.h \
+ /usr/include/c++/13/bits/memory_resource.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/ranges_util.h \
@@ -116,8 +118,36 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: \
  /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc /usr/include/c++/13/limits \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/constants.hpp \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/vm.hpp \
+ /usr/include/signal.h /usr/include/bits/signum-generic.h \
+ /usr/include/bits/signum-arch.h /usr/include/bits/types/sig_atomic_t.h \
+ /usr/include/bits/types/siginfo_t.h /usr/include/bits/types/__sigval_t.h \
+ /usr/include/bits/siginfo-arch.h /usr/include/bits/siginfo-consts.h \
+ /usr/include/bits/siginfo-consts-arch.h \
+ /usr/include/bits/types/sigval_t.h /usr/include/bits/types/sigevent_t.h \
+ /usr/include/bits/sigevent-consts.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/bits/types/stack_t.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigstack.h \
+ /usr/include/bits/sigstksz.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/bits/ss_flags.h \
+ /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
+ /usr/include/bits/signal_ext.h /usr/include/c++/13/stdlib.h \
+ /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/fcntl-linux.h /usr/include/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/bits/stat.h \
+ /usr/include/bits/struct_stat.h /usr/include/sys/time.h \
+ /usr/include/sys/termios.h /usr/include/termios.h \
+ /usr/include/bits/termios.h /usr/include/bits/termios-struct.h \
+ /usr/include/bits/termios-c_cc.h /usr/include/bits/termios-c_iflag.h \
+ /usr/include/bits/termios-c_oflag.h /usr/include/bits/termios-baud.h \
+ /usr/include/bits/termios-c_cflag.h /usr/include/bits/termios-c_lflag.h \
+ /usr/include/bits/termios-tcflow.h /usr/include/bits/termios-misc.h \
+ /usr/include/sys/ttydefaults.h /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/bits/mman-map-flags-generic.h \
+ /usr/include/bits/mman-linux.h /usr/include/bits/mman-shared.h \
+ /usr/include/bits/mman_ext.h \
  /home/kami/playground/c++/lc-3-emu/include/lc3vm/file_reader.hpp \
  /usr/include/c++/13/fstream /usr/include/c++/13/istream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
@@ -151,18 +181,4 @@ CMakeFiles/lc3vm.dir/src/main.cpp.o: \
  /usr/include/c++/13/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream \
- /usr/include/c++/13/bitset \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/endian_utils.hpp \
- /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/term_format.hpp \
- /usr/include/termios.h /usr/include/bits/termios.h \
- /usr/include/bits/termios-struct.h /usr/include/bits/termios-c_cc.h \
- /usr/include/bits/termios-c_iflag.h /usr/include/bits/termios-c_oflag.h \
- /usr/include/bits/termios-baud.h /usr/include/bits/termios-c_cflag.h \
- /usr/include/bits/termios-c_lflag.h /usr/include/bits/termios-tcflow.h \
- /usr/include/bits/termios-misc.h /usr/include/sys/ttydefaults.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/environments.h /usr/include/bits/confname.h \
- /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
- /usr/include/bits/unistd_ext.h /usr/include/linux/close_range.h \
- /home/kami/playground/c++/lc-3-emu/include/lc3vm/pixbuff.hpp
+ /usr/include/c++/13/bitset
