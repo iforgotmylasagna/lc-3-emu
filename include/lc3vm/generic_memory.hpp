@@ -22,9 +22,9 @@
 //
 
 namespace lc3vm{
-
 template<std::integral T, std::size_t N>//this used to be an array lol,bad idea
 class generic_memory{
+  private:
 public:
   using memory_type = T;
   using reference = T&;
@@ -45,12 +45,12 @@ public:
   memory_type& operator[](std::size_t index){
     index = static_cast<memory_type>(index);// this is neccessary because unsigned + unsigned = int results operator[int]
     //
-    if(index==0xFE00){
+    if(index== addr_.kbsr){
       if(check_key()){
-        mem_vec_[0xfe00] =(1 << 15);
-        mem_vec_[0xfe02] = getchar();
+        mem_vec_[addr_.kbsr] =(1 << 15);
+        mem_vec_[addr_.kbdr] = getchar();
       }else{
-        mem_vec_[0xfe00] = 0;
+        mem_vec_[addr_.kbsr] = 0;
       }
     }
     //
@@ -64,12 +64,12 @@ public:
   const memory_type& operator[](std::size_t index) const{
     index = static_cast<memory_type>(index);
     //
-    if(index==0xFE00){
+    if(index== addr_.kbsr){
       if(check_key()){
-        mem_vec_[0xfe00] =(1 << 15);
-        mem_vec_[0xfe02] = getchar();
+        mem_vec_[addr_.kbsr] =(1 << 15);
+        mem_vec_[addr_.kbdr] = getchar();
       }else{
-        mem_vec_[0xfe00] = 0;
+        mem_vec_[addr_.kbsr] = 0;
       }
     }
     //
@@ -95,6 +95,7 @@ public:
 
 private:
   std::vector<memory_type> mem_vec_;
+  constants::addr addr_;
   //
   uint16_t check_key()
 {
