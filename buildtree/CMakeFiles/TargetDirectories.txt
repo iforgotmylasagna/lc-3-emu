@@ -1,7 +1,0 @@
-/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles/lc3vm.dir
-/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles/edit_cache.dir
-/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles/rebuild_cache.dir
-/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles/list_install_components.dir
-/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles/install.dir
-/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles/install/local.dir
-/home/kami/playground/c++/lc-3-emu/buildtree/CMakeFiles/install/strip.dir
