@@ -156,7 +156,7 @@ int vm::run(const mode::mode_type m){
   try{// all register,memory acces might throw out of range, which should never happen
     reg_[reg::cond] = flag::zro; //set initial flag to 0
 
-    reg_[reg::pc] = addr_.p;     //set pc register to userspace start address
+    reg_[reg::pc] = static_cast<memory_type>(addr_.p);     //set pc register to userspace start address
 
     running_ = 1;
 
@@ -214,7 +214,7 @@ inline int vm::puts(){
 
 inline int vm::in(){
   std::cout << "ENTER INPUT: ";
-  char c = std::getchar();
+  char c = static_cast<char>(std::getchar());
   std::cout << c;
   reg_[reg::r0] = static_cast<memory_type>(c);
   update_flags(reg::r0);//correct?

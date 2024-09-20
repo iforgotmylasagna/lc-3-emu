@@ -1,9 +1,11 @@
 #pragma once
 #include <vector>
+#include <array>
 #include <cstdint>
 #include <stdexcept>
 #include <concepts>
 #include <limits>
+#include <algorithm>
 
 
 //
@@ -36,7 +38,9 @@ public:
   }
   using iterator = std::vector<memory_type>::iterator;
 
-  generic_memory(){mem_vec_.resize(max_index()+1);} //otherwise can be filled with random stuff in memory
+  generic_memory(){
+    std::fill(mem_vec_.begin(),mem_vec_.end(),0);
+  } //otherwise can be filled with random stuff in memory
 
   std::size_t size() const{
     return mem_vec_.size();
@@ -48,7 +52,7 @@ public:
     if(index== addr_.kbsr){
       if(check_key()){
         mem_vec_[addr_.kbsr] =(1 << 15);
-        mem_vec_[addr_.kbdr] = getchar();
+        mem_vec_[addr_.kbdr] = static_cast<char>(getchar());
       }else{
         mem_vec_[addr_.kbsr] = 0;
       }
@@ -67,7 +71,7 @@ public:
     if(index== addr_.kbsr){
       if(check_key()){
         mem_vec_[addr_.kbsr] =(1 << 15);
-        mem_vec_[addr_.kbdr] = getchar();
+        mem_vec_[addr_.kbdr] = static_cast<char>(getchar());
       }else{
         mem_vec_[addr_.kbsr] = 0;
       }
@@ -86,15 +90,15 @@ public:
     return (*this)[static_cast<std::size_t>(index)];
   }
 
-  std::vector<memory_type>::iterator begin(){
+  std::array<memory_type,max_index()+1>::iterator begin(){
     return mem_vec_.begin();
   }
-  std::vector<memory_type>::iterator end(){
+  std::array<memory_type,max_index()+1>::iterator end(){
     return mem_vec_.end();
   }
 
 private:
-  std::vector<memory_type> mem_vec_;
+  std::array<memory_type,max_index()+1> mem_vec_;
   constants::addr addr_;
   //
   uint16_t check_key()
