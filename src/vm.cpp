@@ -2,8 +2,8 @@
 #include "lc3vm/term_format.hpp"
 #include <algorithm>
 #include <cstdio>
-#include <chrono> //delete later, just for testing
-#include <thread> //delete later, just for testing
+#include <chrono>
+#include <thread>
 
 using namespace lc3vm;
 using namespace lc3vm::constants;
@@ -192,10 +192,9 @@ vm::memory_type vm::swap(const memory_type& a){
 }
 
 
-//trap functions not tested
 inline int vm::getc(){
   reg_[reg::r0] = static_cast<memory_type>(std::getchar());
-  update_flags(reg::r0);//correct?
+  update_flags(reg::r0);
   return 0;
 }
 
@@ -217,7 +216,7 @@ inline int vm::in(){
   char c = static_cast<char>(std::getchar());
   std::cout << c;
   reg_[reg::r0] = static_cast<memory_type>(c);
-  update_flags(reg::r0);//correct?
+  update_flags(reg::r0);
   return 0;
 }
 

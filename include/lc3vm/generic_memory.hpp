@@ -24,19 +24,19 @@
 //
 
 namespace lc3vm{
-template<std::integral T, std::size_t N>//this used to be an array lol,bad idea
+template<std::integral T, std::size_t N>
 class generic_memory{
   private:
 public:
   using memory_type = T;
   using reference = T&;
 
-  static constexpr std::size_t max_index(){                 //size maximum is maximum value of pointer address
+  static constexpr std::size_t max_index(){//size maximum is maximum value of pointer address
     if constexpr (N > std::numeric_limits<memory_type>::max()) {
       static_assert(false,"size of generic_memory too big");
     } else{return N;}
   }
-  using iterator = std::vector<memory_type>::iterator;
+  using iterator = std::array<memory_type,max_index()+1>::iterator;
 
   generic_memory(){
     std::fill(mem_vec_.begin(),mem_vec_.end(),0);
@@ -90,10 +90,10 @@ public:
     return (*this)[static_cast<std::size_t>(index)];
   }
 
-  std::array<memory_type,max_index()+1>::iterator begin(){
+  iterator begin(){
     return mem_vec_.begin();
   }
-  std::array<memory_type,max_index()+1>::iterator end(){
+  iterator end(){
     return mem_vec_.end();
   }
 
