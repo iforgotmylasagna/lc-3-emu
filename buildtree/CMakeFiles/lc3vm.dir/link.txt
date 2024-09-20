@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/lc3vm.dir/src/main.cpp.o CMakeFiles/lc3vm.dir/src/file_reader.cpp.o CMakeFiles/lc3vm.dir/src/pixbuff.cpp.o CMakeFiles/lc3vm.dir/src/term_format_linux.cpp.o CMakeFiles/lc3vm.dir/src/term_format_win.cpp.o CMakeFiles/lc3vm.dir/src/vm.cpp.o CMakeFiles/lc3vm.dir/src/vm_op_functions.cpp.o -o run 
