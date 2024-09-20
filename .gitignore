@@ -1,5 +1,5 @@
 gitpush.sh
 /buildtree/
-/bin/rogue.obj
-/bin/2048.obj
+bin/rogue.obj
+bin/2048.obj
 
