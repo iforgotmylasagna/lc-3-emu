@@ -11,5 +11,11 @@ if(i==0){
   std::cout << "PROGRAM LOAD SUCCESS"<<std::endl;
  }
 std::cout << "RUNNING..."<<std::endl;
-test.run(mode::normal);
+int j=test.run(mode::normal);
+if(j<0){
+  std::cout << "VM ERROR"<<std::endl;
+  return 0;
+ }
+std::cout << "RUN SUCCESS" <<std::endl;
+return 0;
 }

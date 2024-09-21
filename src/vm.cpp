@@ -214,7 +214,7 @@ inline int vm::puts(){
 inline int vm::in(){
   std::cout << "ENTER INPUT: ";
   char c = static_cast<char>(std::getchar());
-  std::cout << c;
+  std::putchar(c);
   reg_[reg::r0] = static_cast<memory_type>(c);
   update_flags(reg::r0);
   return 0;
