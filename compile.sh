@@ -13,4 +13,4 @@ cmake --build buildtree
 cmake --install buildtree
 
 
-./bin/run
+#./bin/run

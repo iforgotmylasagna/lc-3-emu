@@ -4,7 +4,7 @@
 namespace lc3vm::constants{
 
 
-class reg{//fuck enums
+class reg{
 public:
   using reg_type = size_t;
   static constexpr std::size_t r0 = 0;
@@ -61,12 +61,12 @@ public:
 class trap{
 public:
   using trap_type = size_t;
-  static constexpr std::size_t getc = 0x20;
-  static constexpr std::size_t out = 0x21;
-  static constexpr std::size_t puts = 0x22;
-  static constexpr std::size_t in = 0x23;
-  static constexpr std::size_t putsp = 0x24;
-  static constexpr std::size_t halt = 0x25;
+  static constexpr std::size_t getc = 0x20;//get character
+  static constexpr std::size_t out = 0x21;//output character
+  static constexpr std::size_t puts = 0x22;//print string one character per word
+  static constexpr std::size_t in = 0x23;//inter input with prompt
+  static constexpr std::size_t putsp = 0x24;//print string two character per word
+  static constexpr std::size_t halt = 0x25;//halt program
 };
 
 struct addr{
@@ -85,15 +85,6 @@ struct addr{
   const std::size_t mcr = 0xFFFE; //master control register
   //from FF03 to FFFC
 };
-
-
-
-
-//class init;
-
-
-
-
 
 
 }//end namespace

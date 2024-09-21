@@ -48,8 +48,7 @@ int vm::AND(const memory_type& instr){
     reg_[dr] = reg_[sr1] & reg_[sr2];
   }
 
-  return update_flags(dr); //add can only fail inside update_flags
-                           //so it will reuturn -3 if update flag fail return 0 if success
+  return update_flags(dr);
 }
 
 
@@ -135,9 +134,6 @@ int vm::sti(const memory_type& instr){
 int vm::str(const memory_type& instr){
   memory_type sr = (instr >> 9) & 0x7;
   memory_type baser = (instr >> 6) & 0x7;
-  //std::cout << demangle(typeid(reg_[baser] + sign_ext(instr & 0x3F,6) ).name()) << std::endl;;
-  //std::cout <<reg_[baser]<< std::endl;
-  //std::cout <<static_cast<memory_type>(reg_[baser] + sign_ext(instr & 0x3F,6)) << std::endl;
   mem_[reg_[baser] + sign_ext(instr & 0x3F,6)] = reg_[sr];
   return 0;
 
